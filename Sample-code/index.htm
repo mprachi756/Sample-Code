@@ -1,0 +1,50 @@
+ <!DOCTYPE html>
+<html lang="en-us" ng-app="myApp">
+    <head>
+        <title>AngularJS Weather Forecast SPA</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta charset="UTF-8">
+
+        <!-- load bootstrap and fontawesome via CDN -->
+        <link rel="stylesheet" href="bootstrap.css" />
+        <script src="jquery-3.1.1.js"></script>
+        <script src="bootstrap.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <style>
+            html, body, input, select, textarea
+            {
+                font-size: 1.05em !important;
+            }
+        </style>  
+        <!-- load angular via CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-resource.js"></script>
+        <script src="app.js"></script>
+    </head>
+    <body>
+
+        <header>
+			<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="/">AngularJS Weather</a>
+				</div>
+                
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a ui-sref="shop"><i class="fa fa-shopping-cart"></i> Shop </a></li>
+				</ul>
+
+			</div>
+			</nav>
+		</header>
+
+        <div>
+                <div ui-view> </div>
+
+
+		</div>
+
+    </body>
+</html>
